@@ -4,32 +4,30 @@
     <header>
         <h1 id="title">Video Game Survey</h1>
     </header>
-        <p id="description">THanks for playing!</p>
+        <p id="description">Thanks for playing!</p>
             <body>
                 <form id="survey-form">
                     <label id="name-label"> Name:
                         <input id="name" type="text" placeholder="Name" required></label><br>
                         <br>
-                    <label id="email-lable">Email: 
+                    <label id="email-label">Email: 
                         <input id="email" type="email" placeholder="Email" required></label><br><br>
                     <label id="number-label"> Age: 
                         <input id="number" type="number" placeholder="18" min="18" max="120"></label>
                     <div>
-                        <p>At what age did you start playing video games?</p><br>
-                            <select id="dropdown">
+                        <p>At what age did you start playing video games?</p>
+                            <select id="dropdown" required>
                                 <option value="0">Select</option>
                                 <option>Ages 0-5</option>
                                 <option>Ages 6-11</option>
                                 <option>Ages 12-17</option>
                                 <option>Ages 18+</option>
-                            </select>
-
-
-
-
-
-
-                    </div>
+                            </select></div>
+                    <div>
+                      <p>Gender: 
+                        <input id="gender" type="radio" name="male">Male <input id="gender" type="radio" name="female">Female
+                    <input id="gender" type="radio" name="other"> Self-Identify:<input id="gender">
+</p> </div>
                 </form>
             </body>
 </html>
